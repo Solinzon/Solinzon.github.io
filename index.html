@@ -3,7 +3,7 @@
 <title>徐书展</title>
 <style type="text/css">
 	
-	#head_pic{
+	#head-pic{
 		 border-radius: 10px;
 		 width: 400px;
 		 height: 400px;
@@ -12,19 +12,17 @@
 
 	}
 
-	#center_bg{
+	#center-bg{
 		width: 800px;
 		background: #efefef;
 	    position: absolute;
         top: 50%;
-        transform: translateY(-50%);
-        margin-left: 25%;
-        margin-right: 25%;
+        left: 50%;
+        transform: translate(-50%,-50%);
 		border-radius: 10px;
-
 	}
 
-	#right_info{
+	#right-info{
 		float: right;
 		background: #fff;
 		margin-top: 25px;
@@ -34,25 +32,98 @@
 		width: 350px;
 		height: 350px;
         box-shadow: 0 0 10px #888888;
+	}
+
+	.link-pic{
+		width: 40px;
+		height: 40px;
+		/*margin-top: 50%;*/
+		/*transform: translateY(-50%);*/
 
 	}
 
+	.link-div{
+		position: relative;
+		width: 116.6px;
+		height: 116.6px;
+		text-align: center;
+		float: left;
+		background: #999;
+		margin-top: 20px;
+
+	}
 	body{
 		position: relative;
 		background: #efefef;
 	}
+	a { 
+		text-decoration:none;
+		color:#000;
+	} 
 
+	.center-text-big{
+		text-align: center;
+		margin: 10px;
+		font-size: 30px;
+	}
+
+	.center-text-small{
+		text-align: center;
+		font-size: 12px
+	}
+	.link-con {
+		position: absolute;
+		text-align: center;
+		margin: auto;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 60px;
+		height: 66px;
+	}
+
+	
 </style>
 
 </head>
 
 <body>
-<div id="center_bg"> 
-	<img id = "head_pic" src="my_img/home_page_pic.jpg"> </img> 
-	<div id = right_info>
-		
+<div id="center-bg"> 
+	<img id = "head-pic" src="my_img/home_page_pic.jpg"> </img> 
+	<div id = "right-info" >
+		<div class="center-text-big">徐书展</div> 
+		<div class="center-text-small">Android开发工程师</div>
+	
+		<div class="link-div">
+			<a href="https://github.com/solinzon" >
+				<div class="link-con">
+				<img class="link-pic" src="my_img/github.png">
+		    	<span class="center-text-small">Github</span>
+				</div>
+		    </a>
+		</div>
+		<div class="link-div">
+			<a href="http://blog.csdn.net/xushuzhan" >
+		    	<div class="link-con">
+				<img class="link-pic" src="my_img/csdn.png">
+		    	<span class="center-text-small">Blog</span> 
+				</div>
+			</a>
 	</div>
+	<div class="link-div">
+			<a href="391830728@qq.com" >
+				<div class="link-con">
+				<img class="link-pic" src="my_img/email.png">
+		    	<span class="center-text-small">Email</span> 
+				</div>
+				</div>
+
+			</a>
+    </div>
 </div>
+
+
 </body>
 
 
